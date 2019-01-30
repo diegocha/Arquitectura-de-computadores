@@ -1,1 +1,21 @@
+exponente = int(input("Ingrese el numero del exponente: "))
+mantisa = int(input("Ingrese el numero de la mantisa: "))
+binario = str(input("Ingrese el numero binario: "))
 
+total = exponente + mantisa + 1
+expo = 0
+mantisa1 = 0
+numero_es = ""
+for i in binario:
+  contador = 0
+  contador1 = 0
+  contador2 = 0
+  entero = int(i)
+  if(contador == 0):
+    if(entero==0):
+      numero_es = "positivo"
+    if(entero==1):
+      numero_es = "negativo"
+  if(contador>0 and contador<=exponente):
+    entero1 = entero*(2**contador)
+    expo += entero
